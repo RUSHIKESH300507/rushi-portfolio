@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rushikesh Rathod | B.Tech CSE (AIML) Portfolio</title>
+<meta name="description" content="Portfolio of Rushikesh Rathod: B.Tech CSE (AIML) student, NASA Space Apps Challenge 2025 team leader, builder of data, AI and embedded projects.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<header class="nav"><a class="logo" href="#home">RR<span>.</span></a>
+<nav id="menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#nasa">NASA</a><a href="#education">Education</a><a href="#resume">Resume</a><a href="#contact">Contact</a></nav>
+<button id="theme" aria-label="Toggle light or dark mode">◐</button><button id="burger" aria-label="Open menu">☰</button></header>
+
+<main>
+<section id="home" class="hero wrap">
+ <div class="hero-text">
+  <p class="badge">Mission status: open to internships</p>
+  <h1>Rushikesh Rathod</h1>
+  <p class="role">I build <b id="typed"></b></p>
+  <p class="lead">B.Tech CSE (AIML) student at Sandip University, Nashik. I turn data, rules and sensors into things that work, and I led my team at the NASA International Space Apps Challenge 2025.</p>
+  <div class="cta"><a class="btn primary" href="#projects">See my projects</a><a class="btn" href="#nasa">NASA achievement</a><a class="btn" href="assets/Rushikesh_Rathod_Resume.pdf" download>Download resume</a></div>
+  <ul class="stats"><li><b data-n="4">0</b>projects</li><li><b data-n="36">0</b>hour NASA hackathon</li><li><b data-n="978">0</b>sales records analysed</li></ul>
+ </div>
+ <div class="orbit" aria-hidden="true"><div class="ring r1"><i></i></div><div class="ring r2"><i></i></div><div class="ring r3"><i></i></div>
+  <div class="avatar" id="avatar"><img src="assets/profile.jpg" alt="Rushikesh Rathod" onerror="this.remove()"><span>RR</span></div></div>
+</section>
+
+<section id="about" class="wrap"><h2>About me</h2>
+ <div class="grid2"><div><p>I build small, useful systems: a rule-based medical expert system, a BFS social-network path finder, an Arduino smart dustbin and a car-sales analytics dashboard. Each one started as a question and ended as something you can run.</p>
+ <p>I like problems where logic is visible: you can see why the system answered the way it did.</p></div>
+ <div class="card"><h3>Career interests</h3><p>AI and machine learning, data analytics, explainable AI, embedded and IoT systems, full-stack web development.</p><h3>Goals</h3><p>Land an AI or data internship, ship a project people use, and keep leading teams at hackathons.</p></div></div>
+</section>
+
+<section id="skills" class="wrap"><h2>Skills</h2>
+ <div class="skills" id="skillGrid"></div>
+</section>
+
+<section id="projects" class="wrap"><h2>Projects</h2>
+ <div class="filters" role="group" aria-label="Filter projects"><button class="on" data-f="all">All</button><button data-f="ai">AI</button><button data-f="data">Data</button><button data-f="iot">IoT</button></div>
+ <div class="projects">
+  <article class="card proj" data-c="ai"><div class="shot s1"><span>IF fever AND cough</span><span>THEN respiratory</span></div><h3>Rule-Based Medical Diagnosis Expert System</h3><p>A knowledge-based AI that turns symptoms into facts, fires IF–THEN rules and explains which rule produced the result.</p><p class="tech">Python · Forward chaining · Knowledge base</p><div class="links"><a href="#lab">Try live demo</a><a href="assets/Medical_Expert_System_Documentation.pdf" target="_blank" rel="noopener">Documentation</a><a href="https://github.com/RUSHIKESH300507" target="_blank" rel="noopener">GitHub</a></div></article>
+  <article class="card proj" data-c="data"><div class="shot s2"><span>₹12,812 L</span><span>978 sales</span></div><h3>Car Sales Excel Dashboard</h3><p>Cleaned 1,040 raw rows, built pivot summaries, six linked charts and filter-driven KPIs with an insights sheet.</p><p class="tech">Excel · Pivot tables · Data cleaning · Charts</p><div class="links"><a href="#lab">Open dashboard</a><a href="assets/Car_Sales_Dashboard.xlsx" download>Download .xlsx</a><a href="https://github.com/RUSHIKESH300507" target="_blank" rel="noopener">GitHub</a></div></article>
+  <article class="card proj" data-c="ai"><div class="shot s3"><span>3.64 hops</span><span>83x faster</span></div><h3>BFS Social Network Connection Finder</h3><p>Finds the shortest chain between two users. Tested on 100,000-user graphs; bidirectional BFS expanded 99.6% fewer nodes.</p><p class="tech">Python · Graph theory · BFS · Simulation</p><div class="links"><a href="assets/BFS_Social_Network_Connection_Finder.docx" download>Report</a><a href="https://github.com/RUSHIKESH300507" target="_blank" rel="noopener">GitHub</a></div></article>
+  <article class="card proj" data-c="iot"><div class="shot s4"><span>distance &lt; 20 cm</span><span>lid opens</span></div><h3>Smart Dustbin</h3><p>A touch-free bin: an ultrasonic sensor detects a hand, Arduino UNO drives a servo to open the lid and closes it after a delay.</p><p class="tech">Arduino UNO · HC-SR04 · SG90 servo · C++</p><div class="links"><a href="assets/Smart_Dustbin_Report.docx" download>Report</a><a href="https://github.com/RUSHIKESH300507" target="_blank" rel="noopener">GitHub</a></div></article>
+ </div>
+</section>
+
+<section id="lab" class="wrap"><h2>Try my work here</h2><p class="sub">Two of my projects, running in your browser.</p>
+ <div class="tabs" role="tablist"><button class="on" data-t="dash">Car sales dashboard</button><button data-t="expert">Expert system</button></div>
+ <div id="dash" class="panel card">
+  <div class="kpis"><div><b id="k1"></b>revenue</div><div><b id="k2"></b>units sold</div><div><b>4.05 / 5</b>avg rating</div><div><b>+32.9%</b>units 2025 vs 2024</div></div>
+  <div class="ctrl"><label>Break down by <select id="dim"><option value="brand">Brand</option><option value="region">Region</option><option value="fuel">Fuel type</option><option value="body">Body type</option><option value="pay">Payment mode</option></select></label>
+  <label>Measure <select id="met"><option value="rev">Revenue (₹ lakh)</option><option value="units">Units sold</option></select></label></div>
+  <div id="bars" class="bars" aria-live="polite"></div>
+  <h3>Monthly units: 2024 vs 2025</h3><div id="months" class="months"></div>
+  <p class="note">Insight from my Excel sheet: October and November bring 26.6% of annual sales, so stock and offers should be planned before Q4.</p>
+ </div>
+ <div id="expert" class="panel card" hidden>
+  <p>Tick the symptoms. The engine forward-chains through my five rules from the project report and shows which rule fired.</p>
+  <div id="sym" class="sym"></div><button class="btn primary" id="run">Run diagnosis</button>
+  <div id="out" class="out" aria-live="polite"></div>
+  <p class="note">Educational prototype only. Not a medical diagnosis.</p>
+ </div>
+</section>
+
+<section id="nasa" class="wrap"><h2>Achievement: NASA Space Apps Challenge 2025</h2>
+ <div class="grid2 nasa">
+  <button class="cert" id="certBtn" aria-label="Enlarge certificate"><img src="assets/nasa-certificate.jpg" alt="NASA International Space Apps Challenge 2025 Certificate of Appreciation presented to Rushikesh Sanjay Rathod" loading="lazy"></button>
+  <div><p class="badge">Team Leader</p><p>I led my team through the 36-hour global hackathon held on 4–5 October 2025 at the School of Engineering &amp; Technology, Sandip University, Nashik, the official NASA Local Host.</p>
+  <p>The challenge: build solutions to real-world problems using NASA's open data. I coordinated the idea, split the work and kept the team shipping through the night.</p>
+  <ol class="timeline"><li><b>Hour 0</b> Pick a challenge and read the NASA data</li><li><b>Hour 12</b> Prototype the core idea</li><li><b>Hour 24</b> Build, test and fix</li><li><b>Hour 36</b> Present to the judges</li></ol></div>
+ </div>
+ <h3 class="mt">More achievements</h3>
+ <ul class="chips"><li>Certificate of Appreciation, NASA Space Apps 2025</li><li>Team lead on 4 academic project reports</li><li>Excel data-visualisation project (978 cleaned records)</li><li>Published project documentation for AI and IoT work</li></ul>
+</section>
+
+<section id="education" class="wrap"><h2>Education &amp; experience</h2>
+ <div class="grid2"><div class="card"><h3>B.Tech Computer Science &amp; Engineering (AIML)</h3><p>Sandip University, Nashik. Division A. Academic year 2026–27.</p><p>Relevant work: expert systems, graph algorithms, data visualisation, embedded systems.</p></div>
+ <div class="card"><h3>Experience</h3><p><b>Team Leader</b>, NASA Space Apps Challenge 2025 (36 hours).</p><p><b>Project lead</b>, mini projects with Mayur Jadhav, Uday Suryavanshi and Aditi Tripathi.</p><p>Internship: open to opportunities.</p></div></div>
+</section>
+
+<section id="resume" class="wrap"><h2>Resume</h2>
+ <div class="card resume"><div><h3>Rushikesh Rathod: Resume / CV</h3><p>One page: education, projects, achievements and contact details.</p></div><div><a class="btn primary" href="assets/Rushikesh_Rathod_Resume.pdf" target="_blank" rel="noopener">View</a><a class="btn" href="assets/Rushikesh_Rathod_Resume.pdf" download>Download</a></div></div>
+</section>
+
+<section id="contact" class="wrap"><h2>Contact me</h2>
+ <div class="grid2"><div><p>Have an internship, project or hackathon in mind? Send a message.</p>
+  <ul class="contact"><li><a href="mailto:rathodrushikesh8507@gmail.com">rathodrushikesh8507@gmail.com</a></li><li><a href="https://www.linkedin.com/in/rushikesh-rathod-526a0b376" target="_blank" rel="noopener">LinkedIn: rushikesh-rathod</a></li><li><a href="https://github.com/RUSHIKESH300507" target="_blank" rel="noopener">GitHub: RUSHIKESH300507</a></li></ul></div>
+  <form id="form" class="card"><label>Your name<input name="n" required></label><label>Your email<input name="e" type="email" required></label><label>Message<textarea name="m" rows="4" required></textarea></label><button class="btn primary">Send message</button><p id="fmsg" aria-live="polite"></p></form></div>
+</section>
+</main>
+<footer>© <span id="yr"></span> Rushikesh Rathod. Built with HTML, CSS and JavaScript. Visits on this device: <b id="visits">1</b></footer>
+<div id="lightbox" hidden><img src="assets/nasa-certificate.jpg" alt="NASA certificate, enlarged"></div>
+<script src="js/main.js"></script>
+</body></html>
